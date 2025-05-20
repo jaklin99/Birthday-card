@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -85,6 +85,129 @@
       Free time until 15:00 before your departure ✈️
       <br /><br />
       <p>Can’t wait to live all of this with you 💕</p>
+    </div>
+
+    <canvas class="confetti" id="confettiCanvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🎉 Surprise Birthday Card 🎉</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <!-- Card 1 -->
+      <div class="card" id="card1">
+        <h1>Happy Birthday, Raika-Zaika! 🎂</h1>
+        <p>
+          I am so happy that we got to see how we grow up, we saw each others'
+          ups and downs. We have went through laughter, chaos, late-night talks,
+          and total weirdness. You are more than a BFF to me. Meeting you gifted
+          me with a sister from another mister for life. You are stuck with me!
+          MUHAHAHA!
+          <br /><br />
+          Today, it's your turn to be celebrated for the energy you bring into
+          this world.
+          <br /><br />
+          I LOVE YOU! Yours, <br /><br />
+          Brownie
+        </p>
+        <img
+          src="assets/trip-route.png"
+          alt="Flight from London to Eindhoven"
+          class="plane-img"
+        />
+        <p>✨Your adventure begins here... ✨</p>
+        <button onclick="revealSurprise()">Click for Your Surprise 🎁</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card hidden" id="card2">
+        <h2>✈️ Guess what? ✈️</h2>
+        <p>
+          Prepare your luggage because a trip is awaiting you...prepare for a
+          rainy, but sunny weather.
+        </p>
+
+        <div class="image-reveal-wrapper">
+          <img
+            src="assets/flight-ticket.png"
+            alt="Flight Ticket"
+            id="ticket-img"
+            class="ticket blurred"
+          />
+          <button
+            class="reveal-button"
+            id="reveal-btn"
+            onclick="revealImage('ticket-img', 'reveal-btn')"
+          >
+            Clcik Here
+          </button>
+        </div>
+
+        <h2>🎤 But wait...there’s more.</h2>
+        <p>
+          We’re going to see <strong>Mr. Worldwide</strong> himself live in
+          Amsterdam! Get ready to dance like nobody’s watching and make memories
+          that will last forever.
+        </p>
+        <div class="image-reveal-wrapper">
+          <img
+            src="assets/concert-ticket.png"
+            alt="Concert Ticket"
+            id="concert-img"
+            class="ticket blurred"
+          />
+          <button
+            class="reveal-button"
+            id="reveal-btn-concert"
+            onclick="revealImage('concert-img', 'reveal-btn-concert')"
+          >
+            Click Here
+          </button>
+        </div>
+
+        <p>
+          💖 This birthday isn’t just about candles and cake. It’s about
+          reminding you how deeply you are loved, how much you are appreciated,
+          and how magical life can be when we're <strong>together.</strong> I
+          would not change a thing about US and OUR FRIENDSHIP. I hope you enjoy
+          this trip.💖
+        </p>
+
+        <p>Pack your bags because the journey is just getting started.</p>
+
+        <button onclick="showPlan()">🗺️ Show Trip Plan 🗺️</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card hidden" id="trip-plan">
+        <h2>📆 Our Birthday Trip Plan</h2>
+        <br /><br />
+        <strong>🗓️ June 14 (Arrival Day):</strong><br /><br />
+        Arrival at 20:55 → Chill dinner in Eindhoven → Evening walk & bar
+        hopping
+        <br /><br />
+        <strong>🗓️ June 15 (Amsterdam):</strong>
+        <br />Morning-Noon: Explore the canals, museums, and markets <br />
+        Afternoon: Canal cruise or Van Gogh museum<br />
+        Evening: PITBULL concert 🎤
+        <br /><br />
+        <strong>🗓️ June 16:</strong> Day trip to
+        <strong>Efteling</strong> amusement park 🎢🎠 <br /><br />
+        <strong>🗓️ June 17:</strong> <br /><br />
+        Relax in Eindhoven — brunch, park picnic or local art museum <br />
+        Free time until 15:00 before your departure ✈️
+        <br /><br />
+        <p>Can’t wait to live all of this with you 💕</p>
+        <button onclick="startOver()">🔄 Start Over</button>
+      </div>
     </div>
 
     <canvas class="confetti" id="confettiCanvas"></canvas>

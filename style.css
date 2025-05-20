@@ -12,6 +12,7 @@ body {
   align-items: center;
   color: white;
 }
+
 /* Container for cards side by side */
 .card-wrapper {
   display: flex;
@@ -87,4 +88,36 @@ button {
 
 button:hover {
   background-color: #e0f7ff;
+}
+
+.image-reveal-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.ticket.blurred {
+  filter: blur(10px);
+  transition: filter 0.5s ease;
+}
+
+.reveal-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.reveal-button:hover {
+  background-color: rgba(240, 240, 240, 1);
 }
