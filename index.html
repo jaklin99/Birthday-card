@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🎉 Surprise Birthday Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Happy Birthday, Raya-Samuraya! 🎂</h1>
+      <p>
+        You’re more than just a best friend — you’re a sister to my soul and a
+        light in my life. Today, it's your turn to be celebrated for the joy and
+        energy you bring into this world.
+      </p>
+
+      <p>Your adventure begins here... ✨</p>
+
+      <img
+        src="assets/trip-route.png"
+        alt="Flight from London to Eindhoven"
+        class="plane-img"
+      />
+
+      <button onclick="revealSurprise()">Click for Your Surprise 🎁</button>
+
+      <div id="surprise" class="hidden">
+        <h2>✈️ Guess what?</h2>
+        <p>
+          A ticket is waiting for you — from London to Eindhoven. You’re coming
+          here, and I couldn’t be more excited!
+        </p>
+        <img
+          src="assets/flight-ticket.png"
+          alt="Flight Ticket"
+          class="ticket"
+        />
+
+        <h2>🎤 But wait... there’s more.</h2>
+        <p>
+          We're going to see <strong>Mr. Worldwide</strong> himself — Pitbull —
+          live in Amsterdam! Get ready to dance like nobody's watching and make
+          memories that will last forever.
+        </p>
+        <img
+          src="assets/concert-ticket.png"
+          alt="Pitbull Concert Ticket"
+          class="ticket"
+        />
+
+        <p>
+          This birthday isn’t just about candles and cake. It’s about reminding
+          you how deeply you are loved, how much you are appreciated, and how
+          magical life can be when we're together.
+        </p>
+
+        <p>
+          Pack your bags, beautiful. An unforgettable journey is just getting
+          started. 💖
+        </p>
+      </div>
+    </div>
+
+    <canvas class="confetti" id="confettiCanvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
