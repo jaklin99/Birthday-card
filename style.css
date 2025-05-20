@@ -1,41 +1,90 @@
 body {
-    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    max-width: 600px;
-  }
-  
-  button {
-    background-color: #ff69b4;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .ticket, .plane-img {
-    max-width: 100%;
-    margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
+  background-image: url("assets/pug-wallpaper.jpg");
+  background-size: cover;
+  background-attachment: fixed; /* This line ensures the background stays static */
+  background-position: center;
+  background-repeat: repeat;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+/* Container for cards side by side */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Shared card styles */
+.card {
+  background-color: #ffffff; /* pastel blue with transparency */
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  max-width: 90vw;
+  text-align: center;
+  flex-shrink: 0;
+  color: #0077b6;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+.card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Trip card with a little more width */
+.trip-card {
+  max-width: 750px;
+  width: 90%;
+  text-align: left;
+}
+
+/* Media */
+.ticket,
+.plane-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.trip-plan li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Hide class */
+.hidden {
+  display: none;
+}
+
+/* Buttons */
+button {
+  background-color: #ffffff;
+  color: #0077b6;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0f7ff;
+}
